@@ -7,11 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  currentPage: "colleghi" | "home" | "login" = "login";
+  currentPage: "colleghi" | "home" | "login" | "ristoranti" | "" = "";
+  statusMenu: Boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public changeMenu(): void{
+    this.statusMenu = !this.statusMenu;
+  }
+
+  public clickedLink(link: string): void{
+    let node: HTMLElement | null = document.getElementById(link);
+    if(node){
+      node?.classList.add("activeLink");
+    }
   }
 
 }

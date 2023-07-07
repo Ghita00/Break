@@ -1,7 +1,13 @@
 header{
-    height: 216px;
+    height: 108px;
     background-color: #044389;
     color: white;
+}
+
+@media (min-width: 640px) {
+    header{
+        height: 216px;
+    }
 }
 
 .activeLink{
