@@ -6,3 +6,17 @@
 html{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+input {
+    border: none;
+    border-bottom: 0.5px solid #323232;
+}
+
+.buttonOrange{
+    color: #323232;
+    background-color: #FFAD05;
+}
+
+.activeLink{
+    color: #FFAD05;
+}

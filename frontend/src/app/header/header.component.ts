@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   currentPage: "colleghi" | "home" | "login" | "ristoranti" | "" = "";
-  statusMenu: Boolean = true;
+  statusMenu: Boolean = false;
 
   constructor() { }
 
