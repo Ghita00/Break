@@ -8,13 +8,19 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {MatIconModule} from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeroHomepageComponent } from './hero-homepage/hero-homepage.component';
+import { SliderHomeComponent } from './slider-home/slider-home.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HeroHomepageComponent,
+    SliderHomeComponent,
+    HomeComponent
   ],
   imports: [
     MatIconModule,
