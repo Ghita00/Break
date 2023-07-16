@@ -1,38 +1,96 @@
-<div class="mt-28">
-    <div class="">
-        <p class="font-semibold text-4xl">{{titleSlider}}</p>
-        <p class="text-4xl">{{descriptionSlider}}</p>
-    </div>
-    <div class="mt-16 mb-10">
-        <div class="grid grid-cols-12">
-            <div class="cardSlider max-h-80 col-span-3 shadow-lg rounded-xl">
-                <img src="../../assets/persona1.jpg" class="rounded-xl imgCard m-auto" />
-                <p class="my-4 ml-5 text-lg">Sofia Bianchi</p>
+<div *ngIf="objToView == 'colleghi'">
+
+    <div class="mt-14 mb-14">
+        <div class="">
+            <p class="font-semibold text-4xl">{{titleSlider}}</p>
+            <p class="text-4xl">{{descriptionSlider}}</p>
+        </div>
+        <div class="mt-16 mb-10">
+            <div class="grid grid-cols-12">
+                <div class="cardSlider max-h-80 col-span-3 shadow-lg rounded-xl">
+                    <img src="../../assets/persona1.jpg" class="rounded-xl imgCard m-auto" />
+                    <p class="my-4 ml-5 text-lg">Sofia Bianchi</p>
+                </div>
+                <div class="cardSlider max-h-80 col-span-3 shadow-lg rounded-xl">
+                    <img src="../../assets/persona2.jpg" class="rounded-xl imgCard m-auto" />
+                    <p class="my-4 ml-5 text-lg">Giorgio Basile</p>
+                </div>
+                <div class="cardSlider max-h-80 col-span-3 shadow-lg rounded-xl">
+                    <img src="../../assets/persona3.jpg" class="rounded-xl imgCard m-auto" />
+                    <p class="my-4 ml-5 text-lg">Lucia verdi</p>
+                </div>
+                <div class="cardSlider max-h-80 col-span-3 shadow-lg rounded-xl">
+                    <img src="../../assets/persona1.jpg" class="rounded-xl imgCard m-auto" />
+                    <p class="my-4 ml-5 text-lg">Antonella Esposito</p>
+                </div>
             </div>
-            <div class="cardSlider max-h-80 col-span-3 shadow-lg rounded-xl">
-                <img src="../../assets/persona2.jpg" class="rounded-xl imgCard m-auto" />
-                <p class="my-4 ml-5 text-lg">Giorgio Basile</p>
+        </div>
+        <div class="m-auto w-72">
+            <div class="mx-20">
+                <div class="rounded-full active m-auto h-6 w-6 inline-block mx-1"></div>
+                <div class="rounded-full notActive m-auto h-6 w-6 inline-block mx-1"></div>
+                <div class="rounded-full notActive m-auto h-6 w-6 inline-block mx-1"></div>
+                <div class="rounded-full notActive m-auto h-6 w-6 inline-block mx-1"></div>
             </div>
-            <div class="cardSlider max-h-80 col-span-3 shadow-lg rounded-xl">
-                <img src="../../assets/persona3.jpg" class="rounded-xl imgCard m-auto" />
-                <p class="my-4 ml-5 text-lg">Lucia verdi</p>
-            </div>
-            <div class="cardSlider max-h-80 col-span-3 shadow-lg rounded-xl">
-                <img src="../../assets/persona1.jpg" class="rounded-xl imgCard m-auto" />
-                <p class="my-4 ml-5 text-lg">Antonella Esposito</p>
+
+        </div>
+        <div class="m-auto buttonLink flex justify-center rounded-3xl px-10 py-1.5 text-sm font-semibold leading-6 text-white shadow-xl
+    mt-0 xl:mt-12 w-72">
+            <div class="text-center">
+                Vai alla lista completa
             </div>
         </div>
     </div>
-    <div class="m-auto w-52">
-        <div class="rounded-full active m-auto h-6 w-6 inline-block mx-1"></div>
-        <div class="rounded-full notActive m-auto h-6 w-6 inline-block mx-1"></div>
-        <div class="rounded-full notActive m-auto h-6 w-6 inline-block mx-1"></div>
-        <div class="rounded-full notActive m-auto h-6 w-6 inline-block mx-1"></div>
-    </div>
-    <div class="m-auto buttonLink flex justify-center rounded-3xl px-10 py-1.5 text-sm font-semibold leading-6 text-white shadow-xl
-    mt-0 xl:mt-12">
-        <div class="text-center">
-            Vai alla lista completa
+</div>
+
+<div *ngIf="objToView == 'ristoranti'">
+    <div class="mt-14 mb-14">
+        <div class="">
+            <p class="font-semibold text-4xl">{{titleSlider}}</p>
+            <p class="text-4xl">{{descriptionSlider}}</p>
+        </div>
+        <div class="mt-16 mb-10">
+            <div class="grid grid-cols-2">
+                <div class="">
+                    <img src="../../assets/resturant1.jpg" alt="" class="">
+                </div>
+                <div class="my-16 ml-16">
+                    <div class="mb-16">
+                        <mat-icon class="mr-5 coloriedStar">star</mat-icon>
+                        <mat-icon class="mr-5 coloriedStar">star</mat-icon>
+                        <mat-icon class="mr-5 coloriedStar">star</mat-icon>
+                        <mat-icon class="mr-5 coloriedStar">star</mat-icon>
+                        <mat-icon class="mr-5">star</mat-icon>
+                    </div>
+                    
+                    <div class="mb-72">
+                        <p class="text-4xl">La voglia kebab</p>
+                        <p class="text-xl">Kebab ottimo da asporto</p>
+                    </div>
+
+                    <div>
+                        <p>Disponibile su:</p>
+                        <div class="grid grid-cols-4">
+                            <img src="../../assets/deliveroo.jpg" alt="" class="h-16 w-16 rounded-md">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="m-auto w-72">
+            <div class="mx-20">
+                <div class="rounded-full active m-auto h-6 w-6 inline-block mx-1"></div>
+                <div class="rounded-full notActive m-auto h-6 w-6 inline-block mx-1"></div>
+                <div class="rounded-full notActive m-auto h-6 w-6 inline-block mx-1"></div>
+                <div class="rounded-full notActive m-auto h-6 w-6 inline-block mx-1"></div>
+            </div>
+        </div>
+        <div class="m-auto buttonLink flex justify-center rounded-3xl px-10 py-1.5 text-sm font-semibold leading-6 text-white shadow-xl
+    mt-0 xl:mt-12 w-72">
+            <div class="text-center">
+                Vai alla lista completa
+            </div>
         </div>
     </div>
 </div>
