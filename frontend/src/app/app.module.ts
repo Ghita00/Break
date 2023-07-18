@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeroHomepageComponent } from './hero-homepage/hero-homepage.component';
 import { SliderHomeComponent } from './slider-home/slider-home.component';
 import { HomeComponent } from './home/home.component';
+import { AllStaffComponent } from './all-staff/all-staff.component';
+import { AllResturantComponent } from './all-resturant/all-resturant.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     HeroHomepageComponent,
     SliderHomeComponent,
-    HomeComponent
+    HomeComponent,
+    AllStaffComponent,
+    AllResturantComponent
   ],
   imports: [
     MatIconModule,
