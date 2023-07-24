@@ -13,6 +13,7 @@ import { SliderHomeComponent } from './slider-home/slider-home.component';
 import { HomeComponent } from './home/home.component';
 import { AllStaffComponent } from './all-staff/all-staff.component';
 import { AllResturantComponent } from './all-resturant/all-resturant.component';
+import { PersonDetailComponent } from './person-detail/person-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AllResturantComponent } from './all-resturant/all-resturant.component';
     SliderHomeComponent,
     HomeComponent,
     AllStaffComponent,
-    AllResturantComponent
+    AllResturantComponent,
+    PersonDetailComponent
   ],
   imports: [
     MatIconModule,

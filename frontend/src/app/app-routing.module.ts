@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AllStaffComponent } from './all-staff/all-staff.component';
 import { AllResturantComponent } from './all-resturant/all-resturant.component';
+import { PersonDetailComponent } from './person-detail/person-detail.component';
 
 const routes: Routes = [{
   component: LoginComponent,
@@ -18,6 +19,9 @@ const routes: Routes = [{
 },{
   component: AllResturantComponent,
   path:'resturants'
+},{
+  component: PersonDetailComponent,
+  path:'person'
 },{
   component: HomeComponent,
   path:''
