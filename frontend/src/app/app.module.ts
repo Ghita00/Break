@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { AllStaffComponent } from './all-staff/all-staff.component';
 import { AllResturantComponent } from './all-resturant/all-resturant.component';
 import { PersonDetailComponent } from './person-detail/person-detail.component';
+import { ResturantDetailComponent } from './resturant-detail/resturant-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PersonDetailComponent } from './person-detail/person-detail.component';
     HomeComponent,
     AllStaffComponent,
     AllResturantComponent,
-    PersonDetailComponent
+    PersonDetailComponent,
+    ResturantDetailComponent
   ],
   imports: [
     MatIconModule,

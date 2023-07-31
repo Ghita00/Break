@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { AllStaffComponent } from './all-staff/all-staff.component';
 import { AllResturantComponent } from './all-resturant/all-resturant.component';
 import { PersonDetailComponent } from './person-detail/person-detail.component';
+import { ResturantDetailComponent } from './resturant-detail/resturant-detail.component';
 
 const routes: Routes = [{
   component: LoginComponent,
@@ -12,8 +13,7 @@ const routes: Routes = [{
 },{
   component: HomeComponent,
   path:'home'
-},
-{
+},{
   component: AllStaffComponent,
   path:'staff'
 },{
@@ -22,6 +22,9 @@ const routes: Routes = [{
 },{
   component: PersonDetailComponent,
   path:'person'
+},{
+  component: ResturantDetailComponent,
+  path:'resturant'
 },{
   component: HomeComponent,
   path:''
