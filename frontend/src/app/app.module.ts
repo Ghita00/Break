@@ -15,6 +15,7 @@ import { AllStaffComponent } from './all-staff/all-staff.component';
 import { AllResturantComponent } from './all-resturant/all-resturant.component';
 import { PersonDetailComponent } from './person-detail/person-detail.component';
 import { ResturantDetailComponent } from './resturant-detail/resturant-detail.component';
+import { NewResturantComponent } from './new-resturant/new-resturant.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ResturantDetailComponent } from './resturant-detail/resturant-detail.co
     AllStaffComponent,
     AllResturantComponent,
     PersonDetailComponent,
-    ResturantDetailComponent
+    ResturantDetailComponent,
+    NewResturantComponent
   ],
   imports: [
     MatIconModule,
